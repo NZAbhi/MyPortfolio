@@ -1,0 +1,204 @@
+﻿@page
+@model MyPortfolio.Pages.Admin.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].LasttName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].ProfileDiscription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].Languages)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].MyProjectsLink)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].ContactNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].LinkedInLink)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].School1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].Course1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].Course2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].Course3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].Course4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].Course5)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].Course6)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].Course7)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].Course8)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].Course9)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].Course10)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].School2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].School2Education)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].TecnicalCompitences)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].WorkExprience1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].WorkExprience2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].WorkExprience3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].WorkExprience4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].WorkExprience5)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].References)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyPortfolioInfo[0].Image)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.MyPortfolioInfo) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LasttName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProfileDiscription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Languages)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MyProjectsLink)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContactNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LinkedInLink)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.School1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Course1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Course2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Course3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Course4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Course5)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Course6)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Course7)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Course8)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Course9)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Course10)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.School2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.School2Education)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TecnicalCompitences)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WorkExprience1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WorkExprience2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WorkExprience3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WorkExprience4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WorkExprience5)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.References)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Image)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

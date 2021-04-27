@@ -1,0 +1,234 @@
+﻿@page
+@model MyPortfolio.Pages.CreateProfileModel
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
+
+    var user = await UserManager.GetUserAsync(User);
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Create Your Profile</h1>
+    @if (Model.MyInfos.Count == 0)
+    {
+
+        @if (SignInManager.IsSignedIn(User))
+        {
+            <p>You are Logged in as @User.Identity.Name</p>
+            @*<a href="../Admin/Create">Create</a>*@
+
+            <form method="post" enctype="multipart/form-data">
+
+                <div class="form-group row">
+                    <label for="FirstName" class="col-4 col-form-label">FirstName*</label>
+                    <div class="col-8">
+                        <input id="name" name="FirstName" placeholder="Namn" class="form-control here" type="text" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="LasttName" class="col-4 col-form-label">Last Name*</label>
+                    <div class="col-8">
+                        <input id="LasttName" name="LasttName" placeholder="Last Name" class="form-control here" type="text" />
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="ProfileDiscription" class="col-4 col-form-label">ProfileDiscription*</label>
+                    <div class="col-8">
+                        <input id="ProfileDiscription" name="ProfileDiscription" placeholder="Profile Discription" class="form-control here" type="text" />
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="Languages" class="col-4 col-form-label">Languages*</label>
+                    <div class="col-8">
+                        <input id="Languages" name="Languages" placeholder="Languages" class="form-control here" type="text" />
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="MyProjectsLink" class="col-4 col-form-label">MyProjectsLink*</label>
+                    <div class="col-8">
+                        <input id="MyProjectsLink" name="MyProjectsLink" placeholder="My Projects Link" class="form-control here" type="text" />
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="ContactNumber" class="col-4 col-form-label">ContactNumber*</label>
+                    <div class="col-8">
+                        <input id="ContactNumber" name="ContactNumber" placeholder="Contact Number" class="form-control here" type="number" />
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="Email" class="col-4 col-form-label">Email*</label>
+                    <div class="col-8">
+                        <input id="Email" name="Email" placeholder="Email" class="form-control here" type="text" />
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="LinkedInLink" class="col-4 col-form-label">LinkedInLink*</label>
+                    <div class="col-8">
+                        <input id="LinkedInLink" name="LinkedInLink" placeholder="LinkedIn Link" class="form-control here" type="text" />
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="School1" class="col-4 col-form-label">School1*</label>
+                    <div class="col-8">
+                        <input id="School1" name="School1" placeholder="School" class="form-control here" type="text" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Course1" class="col-4 col-form-label">Course1*</label>
+                    <div class="col-8">
+                        <input id="Course1" name="Course1" placeholder="Course1" class="form-control here" type="text" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Course2" class="col-4 col-form-label">Course2*</label>
+                    <div class="col-8">
+                        <input id="Course2" name="Course2" placeholder="Course2" class="form-control here" type="text" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Course3" class="col-4 col-form-label">Course3*</label>
+                    <div class="col-8">
+                        <input id="Course3" name="Course3" placeholder="Course3" class="form-control here" type="text" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Course4" class="col-4 col-form-label">Course4*</label>
+                    <div class="col-8">
+                        <input id="Course4" name="Course4" placeholder="Course4" class="form-control here" type="text" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Course5" class="col-4 col-form-label">Course5*</label>
+                    <div class="col-8">
+                        <input id="Course5" name="Course5" placeholder="Course5" class="form-control here" type="text" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Course6" class="col-4 col-form-label">Course6*</label>
+                    <div class="col-8">
+                        <input id="Course6" name="Course6" placeholder="Course6" class="form-control here" type="text" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Course7" class="col-4 col-form-label">Course7*</label>
+                    <div class="col-8">
+                        <input id="Course7" name="Course7" placeholder="Course7" class="form-control here" type="text" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Course8" class="col-4 col-form-label">Course8*</label>
+                    <div class="col-8">
+                        <input id="Course8" name="Course8" placeholder="Course8" class="form-control here" type="text" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Course9" class="col-4 col-form-label">Course9*</label>
+                    <div class="col-8">
+                        <input id="Course9" name="Course9" placeholder="Course9" class="form-control here" type="text" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Course10" class="col-4 col-form-label">Course10*</label>
+                    <div class="col-8">
+                        <input id="Course10" name="Course10" placeholder="Course10" class="form-control here" type="text" />
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="School2" class="col-4 col-form-label">School2*</label>
+                    <div class="col-8">
+                        <input id="School2" name="School2" placeholder="School2" class="form-control here" type="text" />
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="School2Education" class="col-4 col-form-label">School2Education*</label>
+                    <div class="col-8">
+                        <input id="School2Education" name="School2Education" placeholder="Course10" class="form-control here" type="text" />
+                    </div>
+                </div>
+
+
+                <div class="form-group row">
+                    <label for="TecnicalCompitences" class="col-4 col-form-label">TecnicalCompitences*</label>
+                    <div class="col-8">
+                        <input id="TecnicalCompitences" name="TecnicalCompitences" placeholder="Tecnical Compitences" class="form-control here" type="text" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="WorkExprience1" class="col-4 col-form-label">WorkExprience1*</label>
+                    <div class="col-8">
+                        <input id="WorkExprience1" name="WorkExprience1" placeholder="WorkExprience1" class="form-control here" type="text" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="WorkExprience2" class="col-4 col-form-label">WorkExprience2*</label>
+                    <div class="col-8">
+                        <input id="WorkExprience2" name="WorkExprience2" placeholder="WorkExprience2" class="form-control here" type="text" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="WorkExprience3" class="col-4 col-form-label">WorkExprience3*</label>
+                    <div class="col-8">
+                        <input id="WorkExprience3" name="WorkExprience3" placeholder="WorkExprience3" class="form-control here" type="text" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="WorkExprience4" class="col-4 col-form-label">WorkExprience4*</label>
+                    <div class="col-8">
+                        <input id="WorkExprience4" name="WorkExprience4" placeholder="WorkExprience4" class="form-control here" type="text" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="WorkExprience5" class="col-4 col-form-label">WorkExprience5*</label>
+                    <div class="col-8">
+                        <input id="WorkExprience5" name="WorkExprience5" placeholder="WorkExprience5" class="form-control here" type="text" />
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="References" class="col-4 col-form-label">References</label>
+                    <div class="col-8">
+                        <input id="References" name="References" placeholder="References" class="form-control here" type="text" />
+                    </div>
+                </div>
+
+
+
+                <div class="form-group row">
+                    <label for="Picture" class="col-4 col-form-label">Picture</label>
+                    <div class="col-8">
+                        <input id="UploadedImage" name="UploadedImage" placeholder="Picture" class="form-control here" type="file" />
+                    </div>
+                </div>
+
+
+
+                <input type="submit" value="Save" />
+
+
+            </form>
+        }
+        else
+        {
+            <p>You have to logged in to create a Profile</p>
+        }
+
+    }
+    else
+    {
+        <a href="../Admin/Edit">Edit</a>
+    }
+
+
+
+

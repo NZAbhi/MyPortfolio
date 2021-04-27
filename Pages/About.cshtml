@@ -1,0 +1,84 @@
+﻿@page
+@model MyPortfolio.Pages.AboutModel
+@{
+}
+
+
+
+<div class="container-fluid" style="background-color:cadetblue">
+    <div class="main-body">
+        <div class="row gutters-sm">
+
+            @if (@Model.MyInfos.Count > 0)
+            {
+
+            @foreach (var myifo in Model.MyInfos)
+                {
+
+            <div class="col-md-12">
+                <div class="card mb-12">
+                    <h2 style=" font-weight:bold">WORK EXPERIENCE : </h2>
+                    <hr />
+                    <div class="card-body">
+
+
+                        <h6 style=" font-weight:bold">@myifo.WorkExprience1 </h6>
+                        <h6 style=" font-weight:bold">@myifo.WorkExprience2 </h6>
+
+                        <h6 style=" font-weight:bold">@myifo.WorkExprience3 </h6>
+
+                        <h6 style=" font-weight:bold">@myifo.WorkExprience4 </h6>
+
+
+
+
+
+
+
+                        <br />
+
+                    </div>
+                </div>
+                <div class="card mb-3">
+
+                    <div class="card-body">
+
+                        <h4>Here are some of my work in GitHub</h4>
+
+                        <a href="@myifo.MyProjectsLink" target="_blank">Visit GitHub Page</a>
+
+
+
+
+
+
+                        <br />
+
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <h2 style=" font-weight:bold">TECH COMPETENCES : </h2>
+                    <hr />
+
+                    <div class="card-body">
+                        <h6>@myifo.TecnicalCompitences </h6>
+
+
+
+
+
+
+
+
+                        <br />
+
+                    </div>
+                </div>
+
+            </div>
+                }
+            }
+        </div>
+    </div>
+</div>

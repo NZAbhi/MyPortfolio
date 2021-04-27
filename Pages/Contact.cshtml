@@ -1,0 +1,49 @@
+﻿@page
+@model MyPortfolio.Pages.ContactModel
+@{
+}
+
+<div class="container-fluid" style="background-color:skyblue">
+    <div class="main-body">
+
+
+        @if (@Model.MyInfos.Count > 0)
+            {
+
+        @foreach (var myifo in Model.MyInfos)
+                {
+        <br />
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 class="mb-0" style=" font-weight:bold">Email : </h6>
+            </div>
+            <div class="col-sm-9 text-secondary">
+                @myifo.Email
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 class="mb-0" style=" font-weight:bold">Telefon : </h6>
+            </div>
+            <div class="col-sm-9 text-secondary">
+                @myifo.ContactNumber
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 class="mb-0" style=" font-weight:bold">LinkedIn : </h6>
+            </div>
+            <div class="col-sm-9 text-secondary">
+                <a href="@myifo.LinkedInLink" target="_blank">Visit LinkedIn Profile</a>
+            </div>
+        </div>
+
+
+                }
+
+            }
+    </div>
+
+</div>

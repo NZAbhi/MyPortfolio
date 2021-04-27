@@ -1,0 +1,174 @@
+﻿@page
+@model MyPortfolio.Pages.Admin.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>MyPortfolioInfo</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.FirstName" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.FirstName" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.LasttName" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.LasttName" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.LasttName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.ProfileDiscription" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.ProfileDiscription" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.ProfileDiscription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.Languages" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.Languages" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.Languages" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.MyProjectsLink" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.MyProjectsLink" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.MyProjectsLink" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.ContactNumber" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.ContactNumber" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.ContactNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.Email" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.Email" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.LinkedInLink" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.LinkedInLink" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.LinkedInLink" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.School1" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.School1" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.School1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.Course1" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.Course1" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.Course1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.Course2" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.Course2" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.Course2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.Course3" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.Course3" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.Course3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.Course4" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.Course4" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.Course4" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.Course5" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.Course5" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.Course5" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.Course6" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.Course6" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.Course6" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.Course7" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.Course7" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.Course7" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.Course8" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.Course8" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.Course8" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.Course9" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.Course9" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.Course9" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.Course10" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.Course10" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.Course10" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.School2" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.School2" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.School2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.School2Education" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.School2Education" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.School2Education" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.TecnicalCompitences" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.TecnicalCompitences" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.TecnicalCompitences" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.WorkExprience1" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.WorkExprience1" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.WorkExprience1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.WorkExprience2" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.WorkExprience2" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.WorkExprience2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.WorkExprience3" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.WorkExprience3" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.WorkExprience3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.WorkExprience4" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.WorkExprience4" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.WorkExprience4" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.WorkExprience5" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.WorkExprience5" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.WorkExprience5" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.References" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.References" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.References" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyPortfolioInfo.Image" class="control-label"></label>
+                <input asp-for="MyPortfolioInfo.Image" class="form-control" />
+                <span asp-validation-for="MyPortfolioInfo.Image" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
